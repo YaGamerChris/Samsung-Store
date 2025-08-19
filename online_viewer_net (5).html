@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Store</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #f5f6f7;
+      color: #222;
+    }
+
+    /* Barra superior */
+    header {
+      background: linear-gradient(90deg, #1428a0, #0072ff);
+      color: white;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Grid de productos */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 180px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1428a0;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #0052cc, #0072ff);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>Samsung Store</header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIPGHz4qfjkvy9vMJgvnfIwRl_flGHFsiPnn85YF3MSOr88Y5P9eUJNHzE&s=10" alt="Galaxy S25 Ultra">
+      <h3>Galaxy S25 Ultra</h3>
+      <p>El smartphone más avanzado de Samsung con IA integrada.</p>
+      <div class="price">(precio varía por región)</div>
+      <a href="https://www.samsung.com/mx/smartphones/galaxy-s25-ultra/buy/" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBAQm139dgUlTeV5DxNdvv67dedbG13yGVHOGYtUsGDK2SeVxAucp-ZoQ&s=10" alt="Galaxy Z Fold7">
+      <h3>Galaxy Z Fold7</h3>
+      <p>Potencia y productividad en un diseño plegable premium.</p>
+      <div class="price">(precio varía por región)</div>
+      <a href="https://www.samsung.com/mx/smartphones/galaxy-z-fold7/buy/" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/mx/f2507/gallery/mx-galaxy-watch8-l330-sm-l330nzsamxo-thumb-547660444?$UX_EXT2_PNG$" alt="Galaxy Watch 8">
+      <h3>Galaxy Watch 8</h3>
+      <p>Tu salud y estilo en una sola pantalla inteligente.</p>
+      <div class="price">(precio varía por región)</div>
+      <a href="https://www.samsung.com/mx/watches/galaxy-watch8/buy/?modelCode=SM-L330NZSAMXO" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt9Fh7Ov8GuJi8p-I3UJAQ-S68odWybfGNwf2RX-L2Z-4_lybPdZ-WicE&s=10" alt="Galaxy Buds3 Pro">
+      <h3>Galaxy Buds3 Pro</h3>
+      <p>Sonido Hi-Fi envolvente con cancelación activa de ruido.</p>
+      <div class="price">(precio varía por región)</div>
+      <a href="https://www.samsung.com/mx/audio-sound/galaxy-buds/galaxy-buds3-pro-silver-sm-r630nzaamxo/" class="btn">Comprar</a>
+    </div>
+  </section>
+</body>
+</html>
